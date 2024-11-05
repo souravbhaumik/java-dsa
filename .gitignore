@@ -27,3 +27,10 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+
+# Intellij configuration files
+*.idea/*
+SpringAutowiringQualifier/.idea/*
+*/target
+*/.idea
+/.vscode
