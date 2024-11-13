@@ -1,38 +1,38 @@
 <h2>Linked list Nodes.</h2>
 Linked list consists of Nodes. Nodes are basically of three types.
-<ul>
-    <li>Head</li>
-    <li>Normal</li>
-    <li>Tail</li>
-</ul>
+    <ul>
+        <li>Head</li>
+        <li>Normal</li>
+        <li>Tail</li>
+    </ul>
 
 <h3>Node Details</h3>
-<ul>
-    <li>NodeValue - Value of the respective Node.</li>
-    <li>Location - Each node hold the location of <b>previous Node(All LL other than SinglyLL)</b> or <b>Next Node.</b></li>
-</ul>
+    <ul>
+        <li>NodeValue - Value of the respective Node.</li>
+        <li>Location - Each node hold the location of <b>previous Node(All LL other than SinglyLL)</b> or <b>Next Node.</b></li>
+    </ul>
 
 <h4>Example of sample Node of <u>Singly Linked List</u></h4>
-<table>
-    <th>NodeValue</th>
-    <th>Location</th>
-    <tr>
-        <td>4</td>
-        <td>005</td>
-    </tr>
-</table>
+    <table>
+        <th>NodeValue</th>
+        <th>Location</th>
+        <tr>
+            <td>4</td>
+            <td>005</td>
+        </tr>
+    </table>
 
 <h4>Example of sample Node of <u>Doubly Linked List</u></h4>
-<table>
-    <th>Location</th>
-    <th>NodeValue</th>
-    <th>Location</th>
-    <tr>
-        <td>004</td>
-        <td>4</td>
-        <td>005</td>
-    </tr>
-</table>
+    <table>
+        <th>Location</th>
+        <th>NodeValue</th>
+        <th>Location</th>
+        <tr>
+            <td>004</td>
+            <td>4</td>
+            <td>005</td>
+        </tr>
+    </table>
 
 <table style="text-align:left">
     <caption><h2><u><b>Array</b> vs <b>Linked List</b></u></h2></caption>
@@ -247,8 +247,8 @@ Example : 4 player chess game. After fourth player game should come to the first
 
 Example : Music Application where we want to move to next song and previous song.
 
-    When the first song is playing that time the previous reference of location of first Node is null. So there is no previous node and the previous button will be deactivated.
-    When then last song is playing that time the next reference of location of the last node is null. So there is no next node and the next button will be deactivated.
+        When the first song is playing that time the previous reference of location of first Node is null. So there is no previous node and the previous button will be deactivated.
+        When then last song is playing that time the next reference of location of the last node is null. So there is no next node and the next button will be deactivated.
 
 <table style="text-align:center;">
     <caption><h3>Circular Doubly Linked List</h3></caption>
@@ -317,6 +317,29 @@ Example : Recent pages of windows(<b>Alt+Shift+Tab</b> or <b>Alt+Tab</b>).
 
 <h3>Creation of Singly Linked List</h3>
 
-    * Create Head and Tail, initialize with null.
-    * Create a blank node and assign a value to it and reference it to null.
-    * Link Head and Tail with the node.
+        * Create Head and Tail, initialize with null.
+        * Create a blank node and assign a value to it and reference it to null.
+        * Link Head and Tail with the node.
+
+<h3>Insertion of Singly Linked List</h3>
+
+        * Accept NodeValue and Location as parameter.
+        * Create a new Node and assign value into it.
+        * Check if Head exists or not.
+        * If Head does not exist, [Head = Tail = Node] and terminate.
+        * If Head exists, check location Parameter.
+
+<ul >
+<li>Insertion at beginning of Singly Linked List</li>
+
+    * If Location = First, [Node.next = Head, Head = Node]
+
+<li>Insertion at the middle of Singly Linked List</li>
+
+    * If Location = Last, [Node.next = null, CurrLast.next = Node, Tail = Node]
+
+<li>Insertion at the end of Singly Linked List</li>
+
+    * If Location = Other, [Find Location(Loopo), Curr.next = Node, Node.next = nextNode]
+
+</ul>

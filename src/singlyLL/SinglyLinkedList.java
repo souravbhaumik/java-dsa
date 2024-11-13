@@ -14,6 +14,7 @@ public class SinglyLinkedList {
      * the `Node` object before it is added to the linked list.
      * @return The `create` method is returning the head node of the linked list that was created with
      * the specified value.
+     * @Time_Complexity O(1)
      */
     public static Node create (int val) {
         head = new Node();
