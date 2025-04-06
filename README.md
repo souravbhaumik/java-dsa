@@ -1,7 +1,7 @@
-<h2>Time Complexity</h2>
+<h2 style="text-align: center;">Time Complexity</h2>
 <h3>Big O notation</h3>
-* We need to check the number of the operations involved in the code, for time complexity.
 
+* We need to check the number of the operations involved in the code, for time complexity.
 
     Suppose we have to find a number from the given array.
     The first element can be find easily. Whereas, the middle
