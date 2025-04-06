@@ -1,6 +1,5 @@
 package DSAArray;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Exercise
@@ -11,8 +10,8 @@ public class Exercise
     }
 
     /*
-     * Take input of temperatures from the user. Average of those temparatures.
-     * How many days are above average temparature.
+     * Take input of temperatures from the user. Average of those temperatures.
+     * How many days are above average temperature.
      */
     private static void calcAvgTemp()
     {
@@ -37,9 +36,9 @@ public class Exercise
         float avg = totalTemp / days;
         int aboveTemp = 0;
         System.out.println( avg );
-        for( int i = 0; i < tempArr.length; i++ )
+        for( int j : tempArr )
         {
-            if( tempArr[i] > avg )
+            if( j > avg )
             {
                 aboveTemp++;
             }
